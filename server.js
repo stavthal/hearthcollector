@@ -116,7 +116,7 @@ server.post("/singlecard", (req,res) => {
 
     options.url = `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${cardName}`;
 
-    console.log(cardName);
+    // console.log(cardName);
 
 
     res.redirect("/card");
@@ -125,7 +125,7 @@ server.post("/singlecard", (req,res) => {
 
 server.post("/by-class" , (req,res) => {
 
-    console.log(req.body.classText);
+    // console.log(req.body.classText);
 
     const className = req.body.classText;
 
@@ -136,7 +136,7 @@ server.post("/by-class" , (req,res) => {
 
 
 server.post("/by-rarity", (req,res) => {
-    console.log(req.body.rarityText);
+    // console.log(req.body.rarityText);
 
     const rarity = req.body.rarityText;
 

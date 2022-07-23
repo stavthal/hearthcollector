@@ -52,7 +52,11 @@ body {
     #hearthstone-logo-big, #hearthstone-logo-nathria {
         visibility: hidden;
 }
-  }
+
+
+
+
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -62,7 +66,10 @@ body {
 .footer {
 	visibility: hidden;
 }
-  }
+
+
+
+}
 
 
 @media only screen and (max-width: 992px) {
@@ -72,6 +79,14 @@ body {
 .footer {
 	visibility: hidden;
 }
+
+#cardset {
+    color: red; 
+    margin: 4% 0% !important;
+    
+
+}
+
   }
 
 
@@ -82,7 +97,9 @@ body {
     border: 2px solid rgb(255, 187, 0);
     border-radius: 15%;
 }
-  
+
+
+
 
 
 
@@ -235,6 +252,7 @@ body {
 #cardset {
     text-align: center;
     margin: 4% 25%;
+
 }
 
 
@@ -377,4 +395,3 @@ body {
     margin: 5rem;
     font-size: 2rem;
 }
-
