@@ -1,0 +1,55 @@
+<%- include('partials/header.ejs'); %>
+
+<div style="text-align: center; margin-bottom: 3rem;">
+    <h1>Click one of the buttons below to check
+        the cards that each class has
+    </h1>
+
+</div>
+<div class="class-buttons-container">
+    
+    <form id="class-form" method="post" action="/by-class">
+     <a id="druid" class="btn class-button">Druid</a><br>
+     <a id="demon-hunter" class="btn class-button">Demon Hunter</a><br>
+     <a id="hunter" class="btn class-button">Hunter</a><br>
+     <a id="mage" class="btn class-button">Mage</a><br>
+     <a id="paladin" class="btn class-button">Paladin</a><br>
+     <a id="priest" class="btn class-button">Priest</a><br>
+     <a id="rogue" class="btn class-button">Rogue</a><br>
+     <a id="shaman" class="btn class-button">Shaman</a><br>
+     <a id="warlock" class="btn class-button">Warlock</a><br>
+     <a id="warrior" class="btn class-button">Warrior</a><br>
+     <input id="hidden-text" name="classText" type="text" style="visibility: hidden" value="" ></input>
+    
+    </form>
+    
+ 
+
+
+    <br>
+    <br>
+    <br>
+</div>
+
+<script>
+    function onClick() {
+        // console.log(this.id);
+        document.getElementById("hidden-text").value = this.id;
+        console.log(document.getElementById("hidden-text").value);
+
+        document.getElementById("class-form").submit();
+    
+    }
+
+   var buttons = document.querySelectorAll(".class-button");
+    
+   for (var i = 0; i < buttons.length; i++) {
+    // console.log(buttons[i].id);
+    buttons[i].addEventListener('click', onClick);
+   }
+
+
+</script>
+
+
+<%- include('partials/footer.ejs'); %>

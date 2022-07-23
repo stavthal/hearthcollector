@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs'); %>
+
+<div style="text-align: center; margin-bottom: 3rem;">
+    <h1>Click one of the buttons below to check the cards based on their
+        rarity.
+    </h1>
+
+</div>
+<div class="rarity-buttons-container">
+    
+    <form id="rarity-form" method="post" action="/by-rarity">
+     <a id="common" class="btn rarity-button">Common</a><br>
+     <a id="rare" class="btn rarity-button">Rare</a><br>
+     <a id="epic" class="btn rarity-button">Epic</a><br>
+     <a id="legendary" class="btn rarity-button">Legendary</a><br>
+     <input id="hidden-text" name="rarityText" type="text" style="visibility: hidden" value="" ></input>
+    
+    </form>
+    
+ 
+
+
+    <br>
+    <br>
+    <br>
+</div>
+
+<script>
+    function onClick() {
+        console.log(this.id);
+        document.getElementById("hidden-text").value = this.id;
+        console.log(document.getElementById("hidden-text").value);
+
+        document.getElementById("rarity-form").submit();
+    
+    }
+
+   var buttons = document.querySelectorAll(".rarity-button");
+    
+   for (var i = 0; i < buttons.length; i++) {
+    // console.log(buttons[i].id);
+    buttons[i].addEventListener('click', onClick);
+   }
+
+
+</script>
+
+<%- include('partials/footer.ejs'); %>

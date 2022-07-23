@@ -1,0 +1,24 @@
+{
+  "name": "project-hs",
+  "version": "1.0.0",
+  "description": "A simple page that handles data from a Hearthstone API to check the cards of the game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Hearthstone",
+    "API",
+    "Development",
+    "Express"
+  ],
+  "author": "Stavros Thalassinos",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}

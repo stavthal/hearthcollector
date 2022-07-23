@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<div class="container-fluid" id="main-div" style="text-align: center; margin-bottom: 2rem;">
+<div style="text-align: center;">
+
+    <% cards.forEach(function(card) { %>
+    <% if (card.img != null) { %>
+        <img class="rendered-image" src="<%=card.img%>"></img>
+    <%}%>
+     <% }) %>
+</div>
+    <a style="margin: 1rem;" href="/" class="btn btn-info">Return to home</a>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
