@@ -90,7 +90,7 @@ server.get("/card" , (req,res) => {
 
     }).catch(function (error) {
         console.error(error);
-        res.render("404");
+        res.redirect('/404')
     });
 
     // res.render("cards", { card : response.data})
