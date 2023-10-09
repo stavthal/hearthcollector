@@ -1,6 +1,6 @@
 <%- include('partials/header.ejs'); %>
 
-<div style="text-align: center; margin-bottom: 3rem;">
+<div style="margin-top: 10%; text-align: center; margin-bottom: 3rem;">
     <h1>Click one of the buttons below to check
         the cards that each class has
     </h1>
@@ -11,6 +11,7 @@
     <form id="class-form" method="post" action="/by-class">
      <a id="druid" class="btn class-button">Druid</a><br>
      <a id="demon-hunter" class="btn class-button">Demon Hunter</a><br>
+     <a id="death-knight" class="btn class-button">Death Knight</a><br>
      <a id="hunter" class="btn class-button">Hunter</a><br>
      <a id="mage" class="btn class-button">Mage</a><br>
      <a id="paladin" class="btn class-button">Paladin</a><br>
@@ -19,16 +20,20 @@
      <a id="shaman" class="btn class-button">Shaman</a><br>
      <a id="warlock" class="btn class-button">Warlock</a><br>
      <a id="warrior" class="btn class-button">Warrior</a><br>
-     <input id="hidden-text" name="classText" type="text" style="visibility: hidden" value="" ></input>
+     <input id="hidden-text" name="classText" type="text" style="visibility: hidden; display: none" value="" ></input>
     
     </form>
+
+    <div style="justify-content: center; text-align: center; align-items: center;">
+        <p style="margin-top: 3rem;"><a href="/" class="btn btn-danger">Return to home</a></p>
+     </div>
     
  
 
-
+<!-- 
     <br>
     <br>
-    <br>
+    <br> -->
 </div>
 
 <script>

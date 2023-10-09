@@ -4,24 +4,28 @@
   <div>
     <h1>Welcome to Hearthcollector!</h1>
     <div id="buttons">
-      <hr> 
-      <p  style="margin-top: 1.87rem;">Take into account that a lot of cards will be shown as duplicates, but if you take a closer look you will notice that they might have a different type or be from a different card set.</p>
-      <p>The cards played in story, adventures and other modes are also included in the site.</p>
-      <p>Use the buttons below to find information about the game</p>
-      <hr>
-      <a class="link btn btn-info" href="/singlecard">Single card</a>
-      <a class="link btn btn-info" href="/by-class">Cards by Class</a>
-      <a class="link btn btn-info" href="/by-rarity">Cards by Rarity</a>
-      <a class="link btn btn-info" href="/cardsets">Card set</a>
-      <a class="link btn btn-info" href="/cardbacks">Cardbacks</a>
+      <hr />
+      <div style="padding: 20px 0; border-radius:20px; background-color: rgb(0, 0, 0, 0.67)">
+        <p style="margin-top: 1.87rem">
+          Take into account that a lot of cards will be shown as duplicates, but
+          if you take a closer look you will notice that they might have a
+          different type or be from a different card set.
+        </p>
+        <p>
+          The cards played in story, adventures and other modes are also
+          included in the site.
+        </p>
+        <p>Use the buttons below to find information about the game</p>
+        </div>
+        <hr />
+        <a class="btn" href="/singlecard">Single card</a>
+        <a class="btn" href="/by-class">Cards by Class</a>
+        <a class="btn" href="/by-rarity">Cards by Rarity</a>
+        <a class="btn" href="/cardsets">Card set</a>
+        <a class="btn" href="/cardbacks">Cardbacks</a>
+      </div>
+    </div>
   </div>
-  </div>
+
+  <%- include('partials/footer.ejs'); %>
 </div>
-
-
-
-
-
-
-
-<%- include('partials/footer.ejs'); %>
